@@ -10,11 +10,8 @@ import { UserRole } from '@prisma/client';
 import React from 'react';
 import { toast } from 'sonner';
 
-interface AdminPageProps {
-  children?: React.ReactNode;
-}
 
-const AdminPage = ({ }: AdminPageProps) => {
+const AdminPage = () => {
 
   const onServerActionClick = () => {
     admin().then(res => {
