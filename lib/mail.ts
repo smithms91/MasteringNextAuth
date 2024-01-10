@@ -22,7 +22,7 @@ export const sendPasswordResetEmail = async (email: string, token: string) => {
   const resetLink = `${domain}/auth/new-password?token=` + token;
 
   await resend.emails.send({
-    from: 'authmailbox@authportfolio.site',
+    from: 'admin@authportfolio.site',
     to: email,
     subject: 'Reset your password',
     html: `
